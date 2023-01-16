@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-triplicate-styling</title>
+    <!-- internal CSS -->
+    <style>
+        .internal-control {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            background-color: rgb(218, 244, 165);
+            padding: 8px 0;
+            max-width: 100%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .internal-control li {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 18%;
+        }
+
+        .internal-control li:nth-child(1) {
+            color: red;
+        }
+
+        .internal-control li:nth-child(2) {
+            color: chocolate;
+        }
+
+        .internal-control li:nth-child(3) {
+            color: green;
+        }
+
+        .internal-control li:nth-child(4) {
+            color: rgb(184, 184, 3);
+        }
+
+        .internal-control li:nth-child(5) {
+            color: brown;
+        }
+
+        .internal-control div {
+            width: 50%;
+            height: 20px;
+        }
+
+        .internal-control li:nth-child(1) div {
+            background-color: red;
+        }
+
+        .internal-control li:nth-child(2) div {
+            background-color: chocolate;
+        }
+
+        .internal-control li:nth-child(3) div {
+            background-color: green;
+        }
+
+        .internal-control li:nth-child(4) div {
+            background-color: yellow;
+        }
+
+        .internal-control li:nth-child(5) div {
+            background-color: brown;
+        }
+
+        .internal-control li img {
+            width: 100%;
+            height: 180px;
+        }
+    </style>
+    <!-- linking of External CSS -->
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<!-- display section of the page -->
+
+<body>
+    <header>
+        <h1>CSS Triplicate Styling</h1>
+    </header>
+    <main>
+        <!-- In-line CSS and it's HTML -->
+        <h3>In-line CSS</h3>
+        <ul
+            style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: flex-start; background-color: antiquewhite; padding: 8px 0; max-width: 100%; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 18px; font-weight: 400;">
+            <li
+                style="color: red; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; width: 18%;">
+                <span>Red</span>
+                <div style="width: 50%; height: 20px; background-color: red;"></div>
+                <img src="./img/red-car.jpg" alt="" style="width: 100%; height: 180px;">
+            </li>
+            <li
+                style="color: chocolate; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; width: 18%;">
+                <span>Chocolate</span>
+                <div style="width: 50%; height: 20px; background-color: chocolate;"></div>
+                <img src="./img/chocolate.jpg" alt="" style="width: 100%; height: 180px;">
+            </li>
+            <li
+                style="color: green; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; width: 18%;">
+                <span>Green</span>
+                <div style="width: 50%; height: 20px; background-color: green;"></div>
+                <img src="./img/green-apple.jpg" alt="" style="width: 100%; height: 180px;">
+            </li>
+            <li
+                style="color: rgb(184, 184, 3); display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; width: 18%;">
+                <span>Yellow</span>
+                <div style="width: 50%; height: 20px; background-color: yellow;"></div>
+                <img src="./img/yellow.png" alt="" style="width: 100%; height: 180px;">
+            </li>
+            <li
+                style="color: Brown; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; width: 18%;">
+                <span>Brown</span>
+                <div style="width: 50%; height: 20px; background-color: Brown;"></div>
+                <img src="./img/Brown.jpg" alt="" style="max-width: 100%; height: 180px;">
+            </li>
+        </ul>
+        <!-- HTML of the internal CSS -->
+        <h3>Internal CSS</h3>
+        <ul class="internal-control">
+            <li>
+                <span>Red</span>
+                <div></div>
+                <img src="./img/red-car.jpg" alt="">
+            </li>
+            <li>
+                <span>Chocolate</span>
+                <div></div>
+                <img src="./img/chocolate.jpg" alt="">
+            </li>
+            <li>
+                <span>Green</span>
+                <div></div>
+                <img src="./img/green-apple.jpg" alt="">
+            </li>
+            <li>
+                <span>Yellow</span>
+                <div></div>
+                <img src="./img/yellow.png" alt="">
+            </li>
+            <li>
+                <span>Brown</span>
+                <div></div>
+                <img src="./img/Brown.jpg" alt="">
+            </li>
+        </ul>
+        <!-- HTML of the External CSS -->
+        <h3>External CSS</h3>
+        <ul class="External-control">
+            <li>
+                <span>Red</span>
+                <div></div>
+                <img src="./img/red-car.jpg" alt="">
+            </li>
+            <li>
+                <span>Chocolate</span>
+                <div></div>
+                <img src="./img/chocolate.jpg" alt="">
+            </li>
+            <li>
+                <span>Green</span>
+                <div></div>
+                <img src="./img/green-apple.jpg" alt="">
+            </li>
+            <li>
+                <span>Yellow</span>
+                <div></div>
+                <img src="./img/yellow.png" alt="">
+            </li>
+            <li>
+                <span>Brown</span>
+                <div></div>
+                <img src="./img/Brown.jpg" alt="">
+            </li>
+        </ul>
+    </main>
+</body>
+
+</html>
